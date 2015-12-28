@@ -6,7 +6,7 @@
  *    without disabling user zoom.
  */
 
-html {
+:global html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -16,7 +16,7 @@ html {
  * Remove default margin.
  */
 
-body {
+:global body {
   margin: 0;
 }
 
@@ -30,19 +30,19 @@ body {
  * Correct `block` display not defined for `main` in IE 11.
  */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+:global article,
+:global aside,
+:global details,
+:global figcaption,
+:global figure,
+:global footer,
+:global header,
+:global hgroup,
+:global main,
+:global menu,
+:global nav,
+:global section,
+:global summary {
   display: block;
 }
 
@@ -51,10 +51,10 @@ summary {
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
 
-audio,
-canvas,
-progress,
-video {
+:global audio,
+:global canvas,
+:global progress,
+:global video {
   display: inline-block; /* 1 */
   vertical-align: baseline; /* 2 */
 }
@@ -64,7 +64,7 @@ video {
  * Remove excess height in iOS 5 devices.
  */
 
-audio:not([controls]) {
+:global audio:not([controls]) {
   display: none;
   height: 0;
 }
@@ -74,8 +74,8 @@ audio:not([controls]) {
  * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
 
-[hidden],
-template {
+:global [hidden],
+:global template {
   display: none;
 }
 
@@ -86,7 +86,7 @@ template {
  * Remove the gray background color from active links in IE 10.
  */
 
-a {
+:global a {
   background-color: transparent;
 }
 
@@ -95,8 +95,8 @@ a {
  * active/hover state.
  */
 
-a:active,
-a:hover {
+:global a:active,
+:global a:hover {
   outline: 0;
 }
 
@@ -107,7 +107,7 @@ a:hover {
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 
-abbr[title] {
+:global abbr[title] {
   border-bottom: 1px dotted;
 }
 
@@ -115,8 +115,8 @@ abbr[title] {
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
 
-b,
-strong {
+:global b,
+:global strong {
   font-weight: bold;
 }
 
@@ -124,7 +124,7 @@ strong {
  * Address styling not present in Safari and Chrome.
  */
 
-dfn {
+:global dfn {
   font-style: italic;
 }
 
@@ -133,7 +133,7 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 
-h1 {
+:global h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -142,7 +142,7 @@ h1 {
  * Address styling not present in IE 8/9.
  */
 
-mark {
+:global mark {
   background: #ff0;
   color: #000;
 }
@@ -151,7 +151,7 @@ mark {
  * Address inconsistent and variable font size in all browsers.
  */
 
-small {
+:global small {
   font-size: 80%;
 }
 
@@ -159,19 +159,19 @@ small {
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
 
-sub,
-sup {
+:global sub,
+:global sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
-sup {
+:global sup {
   top: -0.5em;
 }
 
-sub {
+:global sub {
   bottom: -0.25em;
 }
 
@@ -182,7 +182,7 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 
-img {
+:global img {
   border: 0;
 }
 
@@ -190,7 +190,7 @@ img {
  * Correct overflow not hidden in IE 9/10/11.
  */
 
-svg:not(:root) {
+:global svg:not(:root) {
   overflow: hidden;
 }
 
@@ -201,7 +201,7 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 
-figure {
+:global figure {
   margin: 1em 40px;
 }
 
@@ -209,7 +209,7 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 
-hr {
+:global hr {
   box-sizing: content-box;
   height: 0;
 }
@@ -218,7 +218,7 @@ hr {
  * Contain overflow in all browsers.
  */
 
-pre {
+:global pre {
   overflow: auto;
 }
 
@@ -226,10 +226,10 @@ pre {
  * Address odd `em`-unit font size rendering in all browsers.
  */
 
-code,
-kbd,
-pre,
-samp {
+:global code,
+:global kbd,
+:global pre,
+:global samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
@@ -249,11 +249,11 @@ samp {
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
 
-button,
-input,
-optgroup,
-select,
-textarea {
+:global button,
+:global input,
+:global optgroup,
+:global select,
+:global textarea {
   color: inherit; /* 1 */
   font: inherit; /* 2 */
   margin: 0; /* 3 */
@@ -263,7 +263,7 @@ textarea {
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 
-button {
+:global button {
   overflow: visible;
 }
 
@@ -274,8 +274,8 @@ button {
  * Correct `select` style inheritance in Firefox.
  */
 
-button,
-select {
+:global button,
+:global select {
   text-transform: none;
 }
 
@@ -287,10 +287,10 @@ select {
  *    `input` and others.
  */
 
-button,
-html input[type="button"], /* 1 */
-input[type="reset"],
-input[type="submit"] {
+:global button,
+:global html input[type="button"], /* 1 */
+:global input[type="reset"],
+:global input[type="submit"] {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
 }
@@ -299,8 +299,8 @@ input[type="submit"] {
  * Re-set default cursor for disabled elements.
  */
 
-button[disabled],
-html input[disabled] {
+:global button[disabled],
+:global html input[disabled] {
   cursor: default;
 }
 
@@ -308,8 +308,8 @@ html input[disabled] {
  * Remove inner padding and border in Firefox 4+.
  */
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+:global button::-moz-focus-inner,
+:global input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -319,7 +319,7 @@ input::-moz-focus-inner {
  * the UA stylesheet.
  */
 
-input {
+:global input {
   line-height: normal;
 }
 
@@ -331,8 +331,8 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 
-input[type="checkbox"],
-input[type="radio"] {
+:global input[type="checkbox"],
+:global input[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -343,8 +343,8 @@ input[type="radio"] {
  * decrement button to change from `default` to `text`.
  */
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+:global input[type="number"]::-webkit-inner-spin-button,
+:global input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -353,7 +353,7 @@ input[type="number"]::-webkit-outer-spin-button {
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
 
-input[type="search"] {
+:global input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   box-sizing: content-box; /* 2 */
 }
@@ -364,8 +364,8 @@ input[type="search"] {
  * padding (and `textfield` appearance).
  */
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+:global input[type="search"]::-webkit-search-cancel-button,
+:global input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -373,7 +373,7 @@ input[type="search"]::-webkit-search-decoration {
  * Define consistent border, margin, and padding.
  */
 
-fieldset {
+:global fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
@@ -384,7 +384,7 @@ fieldset {
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
 
-legend {
+:global legend {
   border: 0; /* 1 */
   padding: 0; /* 2 */
 }
@@ -393,7 +393,7 @@ legend {
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
 
-textarea {
+:global textarea {
   overflow: auto;
 }
 
@@ -413,12 +413,12 @@ optgroup {
  * Remove most spacing between table cells.
  */
 
-table {
+:global table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-td,
-th {
+:global td,
+:global th {
   padding: 0;
 }
