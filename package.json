@@ -1,18 +1,17 @@
 {
-  "name": "normalize.css",
-  "version": "3.0.3",
-  "description": "Normalize.css as a node packaged module",
+  "name": "css-modules-normalize.css",
+  "version": "1.0.0",
+  "description": "Normalize.css for CSS Modules as a node packaged module",
   "style": "normalize.css",
   "files": [
     "LICENSE.md",
     "normalize.css"
   ],
-  "homepage": "http://necolas.github.io/normalize.css",
   "repository": {
     "type": "git",
-    "url": "git://github.com/necolas/normalize.css.git"
+    "url": "git://github.com/srmor/css-modules-normalize.css.git"
   },
   "main": "normalize.css",
-  "author": "Nicolas Gallagher",
+  "author": "Stephen Morrison",
   "license": "MIT"
 }
